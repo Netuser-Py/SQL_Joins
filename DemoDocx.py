@@ -6,21 +6,17 @@
 
 import docx
 
-#TRY:
-#from docxtpl import DocxTemplate
-#doc_work = DocxTemplate()
-
 def docx_demo(wk_path):
 # Part 1
 #new empty Document - uses default template
 	doc_work = docx.Document()
-#Add headers lines (paragrphs)
+#Add headers lines (paragraphs)
 	doc_work.add_heading('This is a Main Heading', 0)
 	doc_work.add_heading('This is a level 1 Heading', 1)
 	doc_work.add_heading('This is a level 2 Heading', 2)
 	doc_work.add_heading('This is a level 3 Heading', 3)
 	doc_work.add_heading('This is a level 4 Heading', 4)
-#Add standard lines (paragrphs)
+#Add standard lines (paragraphs)
 	doc_work.add_paragraph('This is a new paragraph 1.')
 	doc_work.add_paragraph('This is a new paragraph 2.',style = 'NoSpacing')
 	doc_work.add_paragraph('This is a new paragraph 3.')
@@ -46,7 +42,7 @@ def docx_demo(wk_path):
 #add a page break
 	doc_work.add_page_break()
 
-#Open a Teplate/Form .docx file that you created in word
+#Open a Template/Form .docx file that you created in word
 	doc_tb = docx.Document(wk_path + '01detail_section.docx')
 
 #merge  this into doc_work
@@ -58,21 +54,21 @@ def docx_demo(wk_path):
 
 # Part 2
 #Use a template word file to create a non stnadard size page
-#Open a Teplate/Form .docx file that you created in word 4 x 6 inch form
+#Open a Template/Form .docx file that you created in word 4 x 6 inch form
 	doc = docx.Document(wk_path + 'template4x6.docx')
 
-#list the main paragrph text (not the table text)
+#list the main paragraph text (not the table text)
 	for x in doc.paragraphs:
 		print(x.text)
 
-#Load the paragrphs into a list
+#Load the paragraphs into a list
 	fullText = []
 	for para in doc.paragraphs:
 	    fullText.append(para.text)
 #print the paragraph list
 	print(fullText)
 
-#overwrite the contents of paragrphs:  input is coded as %%Ti%%
+#overwrite the contents of paragraphs:  input is coded as %%Ti%%
 #repalce as needed
 	for para in doc.paragraphs:
 		for i in range(0,10):
@@ -103,7 +99,7 @@ def docx_demo(wk_path):
 		doc_out.element.body.append(element)
 
 #merge doc into out. Note that somehow it fllows the layout of doc 4 x 6
-#last documnet merged controls
+#Note: The last document merged controls
 	for element in doc.element.body:
 		doc_out.element.body.append(element)
 
