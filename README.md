@@ -1,7 +1,9 @@
 # PythonDocx
  
- See: https://slides.com/mystuff/pythoncsvdemo-3/live#/
+ See: http://slides.com/mystuff/pythoncdocxsvdemo#/
 +
 +Files:
-+MyMain.py                 Demo Code
-+pyinstallerDemo.bat       Batch to create Pyinstyaller package
++DemoDocx.py               Demo Code
+\Docs Folder               Template Files and Output space
+\docs\template4x6.docx
+\docs\01detail_section.docx
