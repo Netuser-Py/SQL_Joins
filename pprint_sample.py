@@ -36,7 +36,7 @@ def ChangeDefaultPrinter(printer):
 # print out list of printers
 	pprint.pprint(printers)
 # change printer (example on my work network)
-#	ChangeDefaultPrinter(r'ZDesigner GK420d')
+#	ChangeDefaultPrinter(r'HP Photosmart C309a series')
 	ChangeDefaultPrinter(r'\\domain\XEROX-1')
 # Print a file
 	subprocess.Popen([r"C:\Program Files (x86)\Microsoft Office\Office12\WINWORD.EXE", r".\docs\\new-file-name.docx"), "/mFilePrintDefault", "/mFileExit"]).communicate()
