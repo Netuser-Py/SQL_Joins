@@ -1,9 +1,8 @@
 # PythonDocx
  
- See: http://slides.com/mystuff/pythoncdocxsvdemo#/
+ See: https://slides.com/mystuff/sql_joins/live#/
 +
 +Files:
-+DemoDocx.py               Demo Code
-\Docs Folder               Template Files and Output space
-\docs\template4x6.docx
-\docs\01detail_section.docx
++Demo.sqlite3               Demo database
++https://www.w3schools.com/sql/default.asp
++https://sqlitestudio.pl/index.rvt
